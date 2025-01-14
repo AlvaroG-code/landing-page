@@ -1,0 +1,24 @@
+//custom landing page
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$landing-dark: #212121;
+$landing-light: #F5F5F5;
+$text-dark: #64DD17;
+$text-light: #FAFAFA;
+
+$landing-page: (
+    "landing-dark": $landing-dark,
+    "landing-light": $landing-light,
+    "t-dark": $text-dark,
+    "t-light": $text-light,
+);
+
+
+
+$theme-colors:map-merge($landing-page,$theme-colors);
+
+
+//importar toda la libreria de bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
